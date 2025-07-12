@@ -7,7 +7,7 @@ class SensorsVaccineSchema(BaseModel):
   nameSensor : str
   information : str
 class SensorsVaccine(SensorsVaccineSchema):
-    idSensorCheck : int
+    idSensorVaccine : int
     
     class Config:
         orm_mode : True

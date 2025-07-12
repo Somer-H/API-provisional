@@ -31,7 +31,7 @@ def create_user(post_user: SensorsVaccineSchema, db: Session = Depends(get_db)):
         db.refresh(new_sensorsVaccine)
 
         response = JSONResponse(content={
-            "idSensorCheck": new_sensorsVaccine.idSensorCheck,
+            "idSensorCheck": new_sensorsVaccine.idSensorsVaccine,
             "measurementUnit": new_sensorsVaccine.measurementUnit,
             "nameSensor": new_sensorsVaccine.nameSensor,
             "information": new_sensorsVaccine.information
